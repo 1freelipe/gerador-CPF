@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: linear-gradient(to right, #4b0082, #9b30ff);
+    --button-color: #104e81;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.bgprimary {
+    background: linear-gradient(to right, #4b0082, #9b30ff);
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px 5px black; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    height: 40px;
+    border: none;
+    background: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.3 ease;
+    width: 100%;
+}
+
+input {
+    font: inherit;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.088);
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: text;
+    outline: none;
+}
+
+input:focus {
+    border-color: #104e81;
+    box-shadow: 0 0 0 3px rgba(155, 48, 255, 0.3);
+}
+
+button:hover {
+    background: var(--button-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(178, 102, 255, 0.5);
+}
+
+button:active {
+    background: var(--button-color);
+}
+
+.resultado {
+    text-align: center;
+    background: rgb(153, 240, 153);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: auto;
+    width: 250px;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.CPFvalido {
+    text-align: center;
+    background: rgb(153, 240, 153);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: auto;
+    width: 200px;
+    margin: 30px auto 0 auto;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.CPFinvalido {
+    text-align: center;
+    background: rgb(240, 153, 153);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    margin: 30px auto 0 auto;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

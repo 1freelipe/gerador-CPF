@@ -1,0 +1,26 @@
+{
+  "name": "webpackboilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "loadwebpack": "webpack -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.44.0",
+    "css-loader": "^7.1.2",
+    "regenerator-runtime": "^0.14.1",
+    "style-loader": "^4.0.0"
+  }
+}
